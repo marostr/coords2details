@@ -22,7 +22,7 @@ class DetailsChecker
     @locations = LocationSplitter.new(locations).call!
   end
 
-  def check_elevation
+  def check_elevation!
     elevation_checker = ElevationChecker.new(locations)
     @services_response ||= elevation_checker.call!.body
   end
