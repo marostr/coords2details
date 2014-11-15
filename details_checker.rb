@@ -27,7 +27,7 @@ class DetailsChecker
     @services_response ||= elevation_checker.call!.body
   end
 
-  def check_terrain
+  def check_terrain!
     services_response.each do |location|
       lat = location['location']['latitude']
       long = location['location']['longitude']
