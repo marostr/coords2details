@@ -2,5 +2,5 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'dstk'
-gem 'rmagick'
+gem 'rmagick', require: 'RMagick'
 gem 'addressable'
