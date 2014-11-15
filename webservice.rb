@@ -11,4 +11,10 @@ class WebService < Sinatra::Base
     response = DetailsChecker.new(params[:locations]).call!
     response.to_json
   end
+
+  post '/coords2details' do
+    redirect to '/' if params[:locations].nil?
+    response = DetailsChecker.new(params[:locations]).call!
+    response.to_json
+  end
 end
