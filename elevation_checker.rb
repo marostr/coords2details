@@ -1,4 +1,3 @@
-require 'dstk'
 require_relative 'dstk_response'
 
 class ElevationChecker

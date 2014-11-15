@@ -1,4 +1,3 @@
-require 'rmagick'
 require 'addressable/uri'
 
 class TerrainChecker
