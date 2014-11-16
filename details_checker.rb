@@ -10,7 +10,7 @@ class DetailsChecker
   end
 
   def call!
-    split_locations!
+    split_locations! unless locations.is_a?(Array)
     check_elevation!
     check_terrain!
     services_response
