@@ -4,6 +4,9 @@ coords2details
 requirements
 ==============
 Ruby: 2.1+
+
+ImageMagick
+
 Gems: sinatra, dstk, rmagick, addressable, rack-contrib, pry.
 Check Gemfile.
 
